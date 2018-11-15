@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>thiagopaiva.com</title>
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/index.min.css">
+</head>
+<body>
+  <header id="header">
+    <h1>{{ name }}</h1>  
+    <span class="descri">{{ desc }}<span>
+    <span class="icogrp">
+      <div class="ico" v-for="link in links">
+        <a :href="link.url" :title="link.title"><i :class="link.ico"></i><label>{{ link.title }}</label></a>
+      </div>
+    </span>  
+    <h3 class="ppt">{{ PPT }}<h3>
+  </header>
+  <div class="timeline" id="timeline">
+    <div v-for="age in ages">
+      <div v-if="!age.hasText">
+        <div :class="age.class">{{ age.title }}</div>
+      </div>
+      <div v-else>
+        <div :class="age.pos">
+          <div :class="age.class">
+            <h2>{{ age.title }}</h2>
+            <h3>{{ age.sTitle1 }}</h3>
+            <h4>{{ age.sTitle2 }}</h4>
+            <p v-html="age.txt"></p>
+            <p class="content-footer">{{ age.techs }}</p>
+          </div>
+        </div>
+      </div>    
+   
+    </div>
+</div> 
+      <footer><i class="copyleft">&copy;</i>Thiago Paiva 2018 - Timeline inspired by <a href="https://www.w3schools.com/howto/howto_css_timeline.asp">W3Schools</a></footer>
+  <script src="js/index.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css?family=Maven+Pro:400,500,700,900');
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fff;
+  font-family: "Maven Pro", sans-serif;
+}
+
+header{
+  text-align:center; 
+  margin-bottom:30px;
+  margin-top:30px;
+}
+
+h1{
+    color:#326273;
+    border: 5px solid #326273;        
+    padding: 1%;
+    width: auto;
+    display: inline-block;
+    font-weight: 900;
+    font-family: 'Maven Pro', sans-serif;
+    font-size: 3pc;
+    margin-top:10px;
+}
+section.secao, header span{
+    box-sizing:border-box;
+    color:#326273;     
+    padding: 1.5%;   
+    display:block;
+    width:100%;
+    font-weight: 1000;
+    font-family: Raleway;
+    font-size: 1pc;
+    margin: 0 auto;
+    margin-top:35px;
+ 
+}
+.descri{
+  width:65%;  
+}
+.icogrp{
+  
+  margin-bottom:70px;
+  margin-left:5%;
+}
+.ico a{  
+  color:#E39774;
+  font-size:46px;
+  float:left;
+  margin-right:14%;
+}
+.ico a label{display:none;}
+.ico a:hover{color:#7C5340;}
+.ppt{  
+    color:#326273;
+    border: 5px solid #326273;        
+    padding: 1%;
+    width: auto;
+    display: inline-block;
+    font-weight: 900;
+    font-family: 'Maven Pro', sans-serif;
+    font-size: 2pc;
+    
+    margin-top:50px;
+}
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top:0px;
+  font-family:Raleway;
+}
+
+
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color: #5c9ead;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+/* Container around content */
+.container {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+  
+}
+
+/* The circles on the timeline */
+.container::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -17px;
+  background-color: #EEE;
+  border: 4px solid #5c9ead;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* Place the container to the left */
+.left {
+  left: 0;
+}
+
+/* Place the container to the right */
+.right {
+  left: 50%;
+}
+
+/* Add arrows to the left container (pointing right) */
+.left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid #EEE;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent #5C9DAE;
+}
+
+/* Add arrows to the right container (pointing left) */
+.right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent #5C9DAE transparent transparent;
+}
+
+/* Fix the circle for containers on the right side */
+.right::after {
+  left: -16px;
+}
+
+/* The actual content */
+.content {
+  border:3px solid #FFF;
+  color:#EEE;
+  padding: 20px 30px;
+  background-color: #326273;
+  position: relative;
+  border-radius: 10px;  
+}
+.content-footer{
+  font-size:10px;
+  font-family:monospace;
+  font-size:0.75pc;
+  font-weight:bold;
+}
+/* Media queries - Responsive timeline on screens less than 600px wide */
+@media screen and (max-width: 600px) {
+/* Place the timelime to the left */
+  .timeline::after {
+    left: 31px;
+  }
+
+/* Full-width containers */
+  .container {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+  }
+
+/* Make sure that all arrows are pointing leftwards */
+  .container::before {
+    left: 60px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+  }
+
+/* Make sure all circles are at the same spot */
+  .left::after, .right::after {
+    left: 15px;
+  }
+
+/* Make all right containers behave like the left ones */
+  .right {
+    left: 0%;
+  }
+  
+.ico a{  
+  color:#E39774;
+  font-size:64px;  
+  float:none;
+  text-decoration:none;
+  margin:0 auto;
+  margin-top:5%;
+}
+.ico a label{
+  display:block;
+  font-size:14px;
+  text-align:center;
+  margin:0 auto;
+  margin-top:5%;
+  margin-bottom:5%;
+  }  
+  .descri{
+    width:100%;  
+  }
+  h1{
+    font-size:3pc;
+  }
+  .ppt{
+    font-size:2pc;
+    margin-top:5%;
+  }
+}
+.sign{
+  padding: 20px 30px;
+  display:block;
+  width:200px;
+  margin:0px auto;
+  position: relative;
+  text-align:center;
+  border-radius: 5%;
+  z-index:3;
+  border-color:#7C5340;
+  border-style:solid;
+  border-width:3px;
+  color:#7C5340;
+  border-radius:10px;
+  font-weight:bolder;
+  font-family:"Maven Pro";
+  margin-bottom:20px;
+  text-transform:uppercase;
+}
+.sign.place{
+  background-color:#7C5340;
+  color:#EEE;
+}
+.sign.status{
+  background-color:#E39774;
+  color:#EEE;
+  border-color:#E39774;
+}
+footer{
+  text-align:center;
+  font-size:12px;
+  font-family:Raleway;
+  padding-top:10px;
+  padding-bottom:10px;
+  color:#326273;
+  border-top: 5px solid #5C9DAE;
+  background-color:white;
+}
+footer a{
+  text-decoration:none;
+  color:#7C5340;
+}
+footer a:hover{font-weight:bold;}
+.copyleft {
+  display:inline-block;
+  transform: rotateY(180deg);
+}
