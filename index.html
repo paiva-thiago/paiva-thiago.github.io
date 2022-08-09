@@ -31,7 +31,12 @@
       <div v-else>
         <div :class="age.pos">
           <div :class="age.class">
-            <h2>{{ age.title }}</h2>
+            <div v-if="age.to!=''">
+              <h2>{{dict.en.from}} {{ age.from }} {{dict.en.to}} {{age.to}}</h2>
+            </div>
+            <div v-else>
+              <h2>{{dict.en.since}} {{age.from}}</h2>
+            </div>  
             <h3>{{ age.sTitle1 }}</h3>
             <h4>{{ age.sTitle2 }}</h4>
             <p v-html="age.txt"></p>
@@ -43,6 +48,8 @@
     </div>
 </div> 
       <footer><i class="copyleft">&copy;</i>Thiago Paiva 2018 - Timeline inspired by <a href="https://www.w3schools.com/howto/howto_css_timeline.asp">W3Schools</a></footer>
+  <script src="js/constants.js"></script>
+  <script src="js/info.js"></script>
   <script src="js/index.min.js"></script>
 </body>
 </html>
