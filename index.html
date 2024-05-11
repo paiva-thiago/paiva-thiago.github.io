@@ -15,7 +15,7 @@
 <body>
   <header id="header">
     <h1>{{ name }}</h1>  
-    <span class="descri">{{ desc }}<span>
+    <span class="descri">{{ desc }}</span>
     <span class="icogrp">
       <div class="ico" v-for="link in links">
         <a :href="link.url" :title="link.title"><i :class="link.ico"></i><label>{{ link.title }}</label></a>
