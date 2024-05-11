@@ -13,7 +13,7 @@ const headerData = {
 const websiteData = {
     dict: words,
     ages: [
-        historyItem('12/2023','05/2024','Sr. Software Engineer', 'Thales Edisoft Portugal', 'Working in maintenance of AIS - Aeronautical Information Systems, used by several airports in the world.','Java 17, Spring Boot, Spring Data JPA, Microservices, RabbitMQ, Gradle, Scrum, Kanban.', 'right'),
+        historyItem('12/2023','05/2024','Sr. Software Engineer', 'Thales Edisoft Portugal', 'Working in maintenance of AIS - Aeronautical Information Systems, used by several airports in the world.','Java 17, Spring Boot, Spring Data JPA, Microservices, RabbitMQ, Gradle, Scrum, Kanban.', 'left'),
         historyItem('08/2022','12/2022','Coder (Development Teacher)','Let\'s Code', 'Teaching Java-related courses.','Java','right' ),
         historyItem('09/2021','11/2023','Sr. Software Developer', 'Integer Consulting', 'Working in development and maintenance of systems related to Portugal\'s Social Security.','Java5, Java6, EJB, Swing, Jenkins, SVN', 'left'),
         historyItem('01/2022','02/2022','Content Producer','Trybe','Development of material for java spring framework course.','Java, Spring','right'),
