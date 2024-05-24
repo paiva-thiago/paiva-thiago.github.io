@@ -1,13 +1,12 @@
 const headerData = {
     name:'Thiago Paiva',
-    desc:'Developer since 2005. Started studying computing as a hobby, when was a teenager, after some courses discovered the passion about finding faster ways to automatize processes and sharing the knowledge of the discoveries with the people. Worked in public and private sectors, is an agile enthusiast and enjoy researching for new languages and frameworks!',
+    desc:'Developer since 2005, with a professional journey starting with Delphi and PHP and since 2014 with Java. Committed, creative, and an enthusiast of agile methodologies, loves finding new ways to automate processes and to research for new languages and frameworks.',
     PPT:'Professional Projects Timeline',
     links:[
        {ico:'fab fa-linkedin',title:'Linkedin',url:'https://www.linkedin.com/in/paivathiago'},              
        {ico:'fab fa-github',title:'GitHub',url:'https://github.com/paiva-thiago'},
        {ico:'fab fa-codepen',title:'Codepen',url:'https://codepen.io/paivacodes/'},
-       {ico:'fas fa-user-graduate',title:'Lattes',url:'http://buscatextual.cnpq.br/buscatextual/visualizacv.do?id=K4453321T3'},
-       {ico:'fas fa-rss',title:'PaivaWorks, my development blog! (soon!)',url:'http://paiva.works/'}
+       {ico:'fas fa-user-graduate',title:'Lattes',url:'http://buscatextual.cnpq.br/buscatextual/visualizacv.do?id=K4453321T3'}
     ]
   }   
 const websiteData = {
