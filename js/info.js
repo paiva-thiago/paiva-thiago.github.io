@@ -1,6 +1,6 @@
 const headerData = {
     name:'Thiago Paiva',
-    desc:'Developer since 2005. Started studying computing as a hobby, when was a teenager, after some courses discovered the passion about finding faster ways to automatize processes and sharing the knowledge of the discoveries with the people. Worked in public and private sectors, likes Java and Loves JavaScript!',
+    desc:'Developer since 2005. Started studying computing as a hobby, when was a teenager, after some courses discovered the passion about finding faster ways to automatize processes and sharing the knowledge of the discoveries with the people. Worked in public and private sectors, is an agile enthusiast and enjoy researching for new languages and frameworks!',
     PPT:'Professional Projects Timeline',
     links:[
        {ico:'fab fa-linkedin',title:'Linkedin',url:'https://www.linkedin.com/in/paivathiago'},              
