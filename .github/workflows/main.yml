@@ -1,6 +1,14 @@
-name: Vue to Git Branch
-  uses:LizAinslie/VueBuildToBranchAction@1.0.2+1
-  with:
-    username: paiva-thiago
-    reponame: paiva-thiago.github.io
-          
+name: Build Vue
+on: [push]
+jobs:
+  build_vue:
+    runs-on: ubuntu-latest
+    name: Build Vue
+    steps:
+    - uses: actions/checkout@v2
+    - id: Build-Vue
+      uses: xRealNeon/VuePagesAction@1.0.0
+      with:
+        username: 'paiva-thiago'
+        reponame: 'paiva-thiago.github.io'
+        token: ${{ secrets.GITHUB_TOKEN }} 
