@@ -1,0 +1,22 @@
+@import url(https://fonts.googleapis.com/css?family=Maven+Pro:400,500,700,900);
+
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  font-weight: normal;
+}
+
+body {
+  transition:
+    color 2s,
+    background-color 0.5s;
+  line-height: 1.6;
+  font-size: 15px;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
