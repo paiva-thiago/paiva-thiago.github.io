@@ -30,8 +30,18 @@ const headerData = {
 }
 const jobs = [
   job(
+    '09/2024',
+    '03/2025',
+    'Fullstack Developer',
+    'Innotech @ Transportes Metropolitanos de Lisboa',
+    'Lisbon, Portugal',
+    `<p>Evolutive and corrective maintenance of microservices for Lisbon’s metropolitan mobility system, working within an Agile environment, participating in daily stand-ups, sprint planning, and retrospectives.</p> 
+    <p>Collaboration with a cross-functional team to ensure high-quality software delivery.<p> `,
+    'Java 17, Spring Boot, Angular, PostgreSQL, Linux Bash, Jenkins, Grafana'
+  ),
+  job(
     '12/2023',
-    '',
+    '06/2024',
     'Sr. Software Engineer',
     'Thales Edisoft Portugal',
     'Oeiras, Lisbon, Portugal',
