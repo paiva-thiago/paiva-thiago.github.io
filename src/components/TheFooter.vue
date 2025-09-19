@@ -1,5 +1,5 @@
 <template>
-  <footer><span class="copyleft">©</span> Thiago Paiva 2024</footer>
+  <footer><span class="copyleft">©</span> Thiago Paiva 2025</footer>
 </template>
 <style>
 .copyleft {
@@ -7,7 +7,7 @@
   transform: rotateY(180deg);
 }
 footer {
-  border-top: 1px solid #9300ff;
+  border-top: 1px solid #444;
   font-family: 'Courier New', Courier, monospace;
   font-size: 14px;
   text-align: center;

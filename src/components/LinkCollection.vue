@@ -30,11 +30,12 @@ export default {
   grid-template-columns: 25% 25% 25% 25%;
 }
 .ico a {
-  color: #9300ff;
+  color: #444;
   font-size: 46px;
   float: left !important;
   margin-left: 5% !important;
   margin-right: 5% !important;
+  height: 90%;
 }
 .ico a label {
   display: none !important;
@@ -52,7 +53,7 @@ export default {
   margin-top: 35px;
 }
 .ico a {
-  color: #9300ff;
+  color: #444;
   font-size: 64px;
   text-decoration: none;
 }

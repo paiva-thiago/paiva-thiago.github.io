@@ -42,7 +42,7 @@ export default {
 }
 .sld {
   background-color: #aaa;
-  color: #9300ff;
+  color: #444;
   width: 60em;
   height: 30em;
 }
