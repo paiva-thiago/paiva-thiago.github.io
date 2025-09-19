@@ -11,7 +11,7 @@ export default {
 </template>
 <style>
 h2.thelogo {
-  color: #9300ff;
+  color: #444;
   border: 3px solid #000;
   background-color: transparent;
   padding: 1%;

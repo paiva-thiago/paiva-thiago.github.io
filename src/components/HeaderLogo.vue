@@ -13,7 +13,7 @@ export default {
 h1 {
   color: #dadada;
   border: 3px solid #000;
-  background-color: #9300ff;
+  background-color: #444;
   padding: 1%;
   width: fit-content;
   height: fit-content;
