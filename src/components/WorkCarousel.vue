@@ -69,7 +69,7 @@ export default {
 }
 button.carousel__next,
 button.carousel__prev {
-  background-color: #99f !important;
+  background-color: #555 !important;
 }
 @media (max-width: 550px) {
   .csrl {
