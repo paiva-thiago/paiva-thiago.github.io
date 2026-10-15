@@ -23,6 +23,11 @@ import data from './data/info.js'
       <WorkList :jobs="data.jobs" class="mobile" />
     </section>
 
+    <section class="timeline">
+      <TheLogo thename="Part-time" />
+      <WorkList :jobs="data.partTimes" />
+    </section>
+
     <TheFooter />
   </main>
 </template>
@@ -35,6 +40,10 @@ import data from './data/info.js'
 
 .timeline {
   text-align: center;
+}
+
+.timeline + .timeline {
+  margin-top: 4rem;
 }
 
 .mobile {

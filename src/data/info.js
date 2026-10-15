@@ -200,7 +200,22 @@ const jobs = [
     'Delphi/Oracle/QReport'
   )
 ]
+
+const partTimes = [
+  job(
+    'Since 09/2026',
+    '',
+    'Teacher',
+    'Sharkcoders',
+    'Algés Lisbon, Portugal',
+    `<p>Teaching programming and game development skills for kids and teenagers from 4 to 16 years old.</p>`,
+    'Python, Lua, Defold, GDevelop, Minecraft Education'
+  )
+]
+
+
 export default {
   headerData: headerData,
-  jobs
+  jobs,
+  partTimes
 }
