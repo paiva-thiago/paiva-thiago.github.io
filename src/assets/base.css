@@ -9,7 +9,7 @@
 :root {
   --c64: 'C64', 'Courier New', monospace;
   --mono: 'Courier New', Courier, monospace;
-  --sans: 'Segoe UI', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  --console: 'IBM Plex Mono', 'Cascadia Mono', 'JetBrains Mono', Consolas, Menlo, 'DejaVu Sans Mono', 'Courier New', monospace;
 
   --bg: #0000aa;
   --bg-soft: #000080;
@@ -85,7 +85,7 @@ html {
 
 body {
   min-height: 100vh;
-  font-family: var(--sans);
+  font-family: var(--console);
   color: var(--text);
   background-color: var(--bg);
   background-image: radial-gradient(circle at 1px 1px, var(--dot) 1px, transparent 0);

@@ -67,7 +67,7 @@ export default {
 }
 
 .workDescription {
-  font-family: var(--sans);
+  font-family: var(--console);
   font-weight: normal;
   color: var(--on-panel);
   text-align: left;

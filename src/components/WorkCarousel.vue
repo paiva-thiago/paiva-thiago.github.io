@@ -84,7 +84,7 @@ export default {
 }
 
 .sld .description {
-  font-family: var(--sans);
+  font-family: var(--console);
   font-weight: normal;
   width: 100%;
   color: var(--on-panel);
