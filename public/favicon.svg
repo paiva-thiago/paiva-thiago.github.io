@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" shape-rendering="crispEdges">
+  <style>
+    .bg { fill: #f3ecdd; }
+    .bd { fill: #221c2e; }
+    .ink { fill: #221c2e; }
+    .accent { fill: #c43b78; }
+    @media (prefers-color-scheme: dark) {
+      .bg { fill: #14111f; }
+      .bd { fill: #ece7f6; }
+      .ink { fill: #ece7f6; }
+      .accent { fill: #ff7ac2; }
+    }
+  </style>
+  <rect class="bg" width="16" height="16" />
+  <rect class="bd" x="0" y="0" width="16" height="1" />
+  <rect class="bd" x="0" y="15" width="16" height="1" />
+  <rect class="bd" x="0" y="0" width="1" height="16" />
+  <rect class="bd" x="15" y="0" width="1" height="16" />
+  <rect class="accent" x="4" y="3" width="8" height="2" />
+  <rect class="ink" x="7" y="5" width="2" height="7" />
+</svg>
