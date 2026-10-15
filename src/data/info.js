@@ -10,9 +10,10 @@ const job = (from, to, jobTitle, company, location, description, tags) => ({
   txt: description,
   techs: tags
 })
+
 const headerData = {
   name: 'Thiago Paiva',
-  desc: 'Developer since 2005, with a professional journey starting with Delphi and PHP and since 2014 with Java. Committed, creative, and an enthusiast of agile methodologies, loves finding new ways to automate processes and to research for new languages and frameworks.',
+  desc: 'Full-stack software engineer with two decades of experience, focused on Java (8–21) and Spring Boot since 2014. Proven track record building RESTful APIs and microservices for high-volume, mission-critical production systems — including financial platforms and investor-data systems demanding strict data-model compliance and reliability. Skilled in production root-cause analysis, system monitoring, Docker-based deployments, and Agile/Scrum delivery within international, distributed teams. Experienced mentoring junior engineers and continuously expanding into new frameworks and cloud practices to keep pace with a fast-moving stack.',
   links: [
     {
       ico: 'fab fa-linkedin-in',
@@ -28,176 +29,136 @@ const headerData = {
     }
   ]
 }
+
 const jobs = [
   job(
     '04/2025',
     '10/2026',
-    'Fullstack Developer',
-    'act Digital @ SLIB',
-    'Lisbon, Portugal',
-    `<p>Development of a project from scratch, focused on  Stock Markets.</p>`,
-    'Java 21, Spring Boot, Angular, PostgreSQL, JaCoCo, JUnit, JIRA '
-  ),job(
+    'Full Stack Developer',
+    'act digital (@ SLIB)',
+    'Lisbon, Portugal — Hybrid 2x/week',
+    `<ul>
+      <li>Contributed to the greenfield development of a Registered Investor Management System for capital markets, within an international Agile (Scrum) team — a business-critical, compliance-driven system.</li>
+      <li>Built Java Spring Boot microservices and RESTful APIs managing sensitive investor registration, eligibility, and holding data, under strict data-model compliance.</li>
+      <li>Applied TDD and Hexagonal Architecture to decouple core domain logic from frameworks and infrastructure, improving testability and long-term maintainability.</li>
+      <li>Developed batch processes to validate and parse text files for reliable, high-volume data ingestion.</li>
+      <li>Designed a reusable library for parsing text/CSV files, cutting development time for file-parsing features by 50% and reducing duplication across services.</li>
+      <li>Collaborated on front-end service loading and i18n, delivering the application in English and French.</li>
+    </ul>`,
+    'Java 21, Maven, Spring Boot, RESTful APIs, Microservices, Hexagonal Architecture, TDD, PostgreSQL, AngularJs, PrimeNG, XLDeploy, Jenkins (CI/CD), Jira, BitBucket.'
+  ),
+  job(
     '09/2024',
     '03/2025',
-    'Fullstack Developer',
-    'Innotech @ Transportes Metropolitanos de Lisboa',
-    'Lisbon, Portugal',
-    `<p>Evolutive and corrective maintenance of microservices for Lisbon’s metropolitan mobility system, working within an Agile environment, participating in daily stand-ups, sprint planning, and retrospectives.</p> 
-    <p>Collaboration with a cross-functional team to ensure high-quality software delivery.<p> `,
-    'Java 17, Spring Boot, Angular, PostgreSQL, Linux Bash, Jenkins, Grafana'
+    'Full Stack Developer',
+    'Innotech (@ Transportes Metropolitanos de Lisboa)',
+    'Lisbon, Portugal — Hybrid 2x/week',
+    `<ul>
+      <li>Owned and evolved a suite of Java Spring Boot microservices forming the core high-volume invoicing and payment engine for Lisbon's metropolitan mobility system (metro, bus, tram, train) — a real-time, business-critical production system.</li>
+      <li>Performed root-cause analysis and delivered corrective fixes for production incidents in critical, high-throughput financial flows, ensuring reliability, data integrity, and revenue assurance.</li>
+      <li>Monitored system performance and data flow with Grafana, enabling proactive detection of issues before they impacted financial operations.</li>
+      <li>Maintained a legacy transport-card management system (Java 7, JSF, Oracle) alongside the microservices platform.</li>
+      <li>Collaborated within a national Agile team, hybrid model, on-site 2x/week.</li>
+    </ul>`,
+    'Java 7/11/17, Spring Boot, Microservices, PostgreSQL, Oracle, HTML, CSS, JavaScript, Angular, Jenkins, Grafana, Maven'
   ),
   job(
     '12/2023',
     '06/2024',
-    'Sr. Software Engineer',
-    'Thales Edisoft Portugal',
-    'Oeiras, Lisbon, Portugal',
-    `<p>Development and maintenance of AIS - Aeronautical Information System, used by several airports in the world in order to exchange flying information, like routes, flight plans and meteorological data.</p>
-    <p>Acting in all agile rites, like dailies, retros and sprint reviews, with part of the team in France, and other part in Portugal, with
-    all the communication in english.</p>
-    <p>This job was based in corrective and evolutionary maintenance of the systems, adding new features or changing them, or
-    correcting some errors concerning the system working. The creation and maintenance of the features evolves data
-    management, API Creations, and screen corrections/implementations (on a swing desktop application)</p>`,
-    'Java 17, Spring Boot, Spring Data JPA, Microservices, RabbitMQ, Gradle, Scrum, Kanban.'
-  ),
-  job(
-    '08/2022',
-    '12/2022',
-    'Coder (Development Teacher)',
-    "Ada (Previously Let's code)",
-    'Brazil, Remote',
-    'Teaching development of systems in Java, and using of design patterns and java resources and frameworks like time API, Spring Framework and Quarkus.',
-    'Java, Spring, Quarkus'
-  ),
-  job(
-    '01/2022',
-    '02/2022',
-    'Content Producer',
-    'Trybe',
-    'Remote',
-    'Development of material for java spring framework course.',
-    'Java, Spring'
+    'Solution Systems Engineer',
+    'Thales Edisoft',
+    'Oeiras, Lisbon, Portugal — Hybrid 1x/week',
+    `<ul>
+      <li><strong>Project 1 — Flight Data Dashboard</strong></li>
+      <li>Developed a dashboard from the ground up — architecture through implementation — to visualize airport flight-plan data.</li>
+      <li>Owned the full project lifecycle as sole/lead developer, from design through delivery.</li>
+      <li>Led knowledge transfer to junior developers at handoff, including documentation and onboarding support — demonstrating a track record of mentoring.</li>
+      <li><strong>Project 2 — Aeronautical Information System (AIS)</strong></li>
+      <li>Maintained and evolved the AIS, used by multiple airports worldwide to exchange flight routes, plans, and meteorological data — corrective and evolutionary work across data management, API development, and UI on a Java Swing desktop application (chosen to meet the client's desktop-deployment requirement).</li>
+      <li>Worked full Agile ceremonies (dailies, retrospectives, sprint reviews) within a distributed France/Portugal team, communicating fully in English.</li>
+    </ul>`,
+    'Java 16/17, Spring Boot, Spring Data JPA, RESTful APIs, Microservices, PostgreSQL, Docker, Linux, Tomcat, RabbitMQ, Gradle, Scrum, Kanban, HTML, CSS, JavaScript, Maven'
   ),
   job(
     '09/2021',
     '11/2023',
-    'Sr. Software Developer',
+    'Software Developer',
     'Integer Consulting',
-    'Oeiras, Lisbon, Portugal',
-    `<p>Inside the Instituto de Informatica da Segurança Social, in the development and maintenance of systems focused on
-    managing professional risks for workers’ health, focusing on both evolutionary enhancements and corrective measures to
-    improve system functionality and performance.</p>
-    <p>Collaborated closely with a cross-functional team of 3 developers and 2 testers to ensure seamless integration and
-    high-quality deliverables.</p>
-    <p>Introduced and implemented agile methodologies, specifically Scrum, to enhance team productivity and project efficiency.</p>
-    <p>Into the agile context, also worked as a scrum master, facilitating sprint planning, daily stand-ups, sprint reviews, and
-    retrospectives, fostering a collaborative and transparent team environment.</p>
-    `,
-    'Java5, Java6, EJB, Swing, Jenkins, SVN'
+    'Oeiras, Lisbon, Portugal — Remote',
+    `<ul>
+      <li>Developed and maintained occupational health & safety risk-data systems, delivering evolutionary enhancements and corrective fixes.</li>
+      <li>Collaborated with a cross-functional team of 3 developers and 2 testers to ensure seamless integration and high-quality delivery.</li>
+      <li>Introduced and implemented Scrum methodology to improve team productivity and delivery efficiency; acted as Scrum Master facilitating stand-ups and fostering a transparent team environment.</li>
+    </ul>`,
+    'Java 5/7, Maven, Swing, Oracle 12, EJB, Jenkins, Glassfish, Scrum, Kanban'
   ),
   job(
     '03/2021',
-    '09-2021',
-    'Senior IT Analyst',
-    'CRECI-SP',
-    'São Paulo, Brazil',
-    `<p>Contributions to the development of systems for the company, a professional association for real estate workers.</p>
-    <p> Additionally, I conducted research on new functionalities and technologies to enhance their offerings.</p>`,
-    '.NET, EF, nodeJs, PHP, C#, ASP, PHP'
-  ),
-  job(
-    '04/2018',
-    '03/2021',
-    'Sr. Systems Analyst',
-    'São Bernardo do Campo City Hall - Third Project',
-    'São Bernardo do Campo, Brazil',
-    `<p>I led the team in gathering requirements, meeting with suppliers, and defining the tech stack and
-    architecture for a REST web service designed for online registration of bank slips. We successfully developed this web
-    service including a CI/CD job on Jenkins to deploy it. This webservice included an administrative dashboard for token
-    management and log visualizations.</p>
-    `,
-    'Java 11. Spring Boot, API, Spring Data JPA, Spring Web MVC, Tomcat Thymeleaf. JUnit, Mockito, CI/CD, Maven, GitLab, Jenkins. Oracle. JavaScript,    CSS, HTML. Kanban.'
+    '09/2021',
+    'IT Analyst',
+    'CRECI',
+    'São Paulo, Brazil — Remote',
+    `<ul>
+      <li>Built and maintained a .NET (C#) back-office system exposing properties for sale with broker contact information for more dynamic sales.</li>
+      <li>Researched and developed a next-generation customer-service chat MVP: evaluated Tiledesk, implemented a scalable backend with Node.js and RabbitMQ, and delivered a functional prototype with integration guidelines, plus an alternative PHP/Laravel prototype for stakeholder comparison.</li>
+    </ul>`,
+    '.NET, EF, C#, ASP, Node.js, RabbitMQ, PHP, Laravel'
   ),
   job(
     '04/2018',
     '03/2021',
-    'Sr. Systems Analyst',
-    'São Bernardo do Campo City Hall - Second Project',
-    'São Bernardo do Campo, Brazil',
-    `<p>I contributed to the development and maintenance of tax management systems. I met with users to align
-    improvements, correct code, and create new features. I developed modules for contract management for habitation
-    programs, including contract printing and an API web service for systems integrations. I also facilitated the system
-    migration from Java 6 to Java 10. It was a web based system, developed with a framework designed for migration from
-    mainframe-based systems.</p>
-    `,
-    'Java 6, Java 10, Oracle, JavaScript, Jquery, CSS, HTML, Node JS, API, NPM, Kanban.'
-  ),
-  job(
-    '04/2018',
-    '03/2021',
-    'Sr. Systems Analyst',
-    'São Bernardo do Campo City Hall - First Project',
-    'São Bernardo do Campo, Brazil',
-    `<p>Development and maintenance of budget control systems for the city administration,
-    utilized by the budget department of the city hall. It was a web based system, based on Struts and EJB, using jenkins to
-    manage the deployment.</p>`,
-    'Java 6, Oracle, Node JS, Jenkins, NPM, Struts, EJB, JBoss'
+    'Senior Systems Analyst',
+    'IT Department, Municipality of São Bernardo do Campo',
+    'São Bernardo do Campo, Brazil — On site',
+    `<ul>
+      <li><strong>Project 1 — Budget Control System</strong></li>
+      <ul>
+        <li>Contributed to development and maintenance of a web-based budget-control system (Struts, EJB) for the city's budget department, with Jenkins-managed deployment.</li>
+      </ul>  
+      <li><strong>Project 2 — Tax Management System</strong></li>
+      <ul>
+        <li>Met with users to align improvements, fix code, and build new features; developed contract-management modules for housing programs, including an API web service for system integrations; led migration from Java 6 to Java 10.</li>
+      </ul>
+      <li><strong>Project 3 — Bank-Slip Registration REST Service</strong></li>
+      <ul>
+        <li>Led requirements gathering, supplier meetings, and tech-stack/architecture definition for a REST web service for online bank-slip registration, including a CI/CD pipeline on Jenkins and an admin dashboard for token management and log visualization.</li>
+      </ul>
+    </ul>`,
+    'Java 6/10/11, Spring Boot, Spring Data JPA, Spring Web MVC, RESTful APIs, Oracle, Node.js, Jenkins, NPM, Struts, EJB, JBoss, Tomcat, Thymeleaf, JUnit, Mockito, CI/CD, Maven, GitLab, JavaScript, jQuery, CSS, HTML, Kanban'
   ),
   job(
     '01/2017',
     '03/2018',
-    'Sr. Analyst Java EE',
-    'Meta',
-    'São Paulo, Brazil',
-    `<p>Working at a support team based on an important insurance company in São Paulo downtown. While acting on find solutions in a Car Insurance Budget Calculation System bugs, I've developed some tools to help in this process.</p>`,
-    'Java 8, JSF, RichFaces, JPA, Hibernate, EJB, Websphere, RTC, Javascript, CSS, HTML. Scrum, Kanban.'
+    'Senior Systems Analyst',
+    'Meta Informática',
+    'São Paulo, Brazil — On site',
+    `<ul>
+      <li>Member of a support team at a leading Brazilian insurance company; significantly improved incident-resolution times using Agile practices (daily stand-ups, Kanban).</li>
+    </ul>`,
+    'Java 8, JSF, RichFaces, JPA, Hibernate, EJB, WebSphere, RTC, JavaScript, CSS, HTML, Scrum, Kanban'
   ),
-
   job(
     '04/2015',
     '12/2016',
     'Substitute Teacher',
-    'IFSP - Cubatão Campus',
+    'IFSP',
     'Cubatão, Brazil',
-    'Teaching some development courses in web, like JavaScript, Jquery, HTML5, CSS3, and Java EE. Used to help on my classes some tools like LMS (Moodle) and Webquests.',
-    "Teaching JavaScript, Jquery, HTML5, CSS3, and Java EE. Using Moodle to student's activities."
-  ),
-  job(
-    '08/2012',
-    '05/2016',
-    'Sr Programmer Analyst',
-    'Virtus Informática',
-    'Santos, Brazil',
-    '<ul><li>Maintenance of the ERP System for meal ticket companies.</li> <li>Migration project when one of our customer was sold, moving all data from our system to the new owner.</li><li>Migration from the old Delphi desktop system to a new version, in Java EE</li></ul> ',
-    'Delphi/Oracle/XML(Maintenance of Legacy System); Java/JPA/Hibernate/JSF/Primefaces '
-  ),
-  job(
-    '03/2008',
-    '08/2012',
-    'Pl Programmer Analyst',
-    'Virtus Informática',
-    'Cubatão, Brazil',
-    'Entered in a new project. A CMS and a Virtual Agency for a public sanitation authority. With the web agency, their users could get water bills or make order for water connections in a faster way than using telephones or getting in person. ',
-    'PHP/Oracle/Smarty Templates/HTML/Javascript'
-  ),
-  job(
-    '06/2006',
-    '02/2008',
-    'Jr Programmer Analyst',
-    'Virtus Informática',
-    'Cubatão, Brazil',
-    "Now as a permanent member of the team, started developing a web portal for meal ticket companies. That was a part of a solution composed by an ERP Desktop System and a web portal for the company's clients make the orders or consulting ticket statements. That was a huge increase in the solution value creating a more interative way of relationship with our clients.",
-    'PHP/Oracle/Smarty Templates/HTML/Javascript'
+    `<ul>
+      <li>Taught web development and introductory algorithm courses in systems analysis and development.</li>
+    </ul>`,
+    'HTML5, CSS, JavaScript, Java EE, JSF, JPA, PrimeFaces, C#, PHP'
   ),
   job(
     '08/2005',
-    '05/2006',
-    'Intern',
+    '05/2016',
+    'Programmer Analyst',
     'Virtus Informática',
-    'Cubatão, Brazil',
-    'Starting developing in a small IT consulting based in Cubatão. Entered in a Desktop System Maintanence team, starting creating and fixing reports.',
-    'Delphi/Oracle/QReport'
+    'Santos, Brazil',
+    `<ul>
+      <li>Developed desktop and web CMS systems for a public sanitation authority and a meal-ticket product line, including barcode-reader integration and a customer-facing PHP web portal (7 years).</li>
+      <li>Migrated the meal-ticket desktop system (Delphi) to a Java/JSF web portal using MVC architecture (4 years).</li>
+    </ul>`,
+    'Delphi 5/7, Java 8, JSF, PrimeFaces, JPA, Hibernate, Tomcat, PHP5, Oracle, JavaScript, jQuery, CSS, HTML5, Smarty, Flash'
   )
 ]
 
@@ -208,11 +169,12 @@ const partTimes = [
     'Teacher',
     'Sharkcoders',
     'Algés Lisbon, Portugal',
-    `<p>Teaching programming and game development skills for kids and teenagers from 4 to 16 years old.</p>`,
+    `<ul>
+      <li>Teaching programming and game development skills for kids and teenagers from 4 to 16 years old.</li>
+    </ul>`,
     'Python, Lua, Defold, GDevelop, Minecraft Education'
   )
 ]
-
 
 export default {
   headerData: headerData,
