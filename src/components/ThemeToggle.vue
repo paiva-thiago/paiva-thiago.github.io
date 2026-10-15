@@ -42,7 +42,7 @@ onMounted(() => {
   gap: 0.5rem;
   font-family: var(--mono);
   font-size: 0.8rem;
-  color: var(--text);
+  color: var(--on-panel);
   background-color: var(--panel);
   border: 2px solid var(--border);
   box-shadow: var(--shadow-sm);

@@ -32,7 +32,7 @@ export default {
   display: inline-flex;
   align-items: center;
   gap: 0.55rem;
-  color: var(--text);
+  color: var(--on-panel);
   font-family: var(--mono);
   font-size: 0.85rem;
   text-decoration: none;

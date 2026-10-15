@@ -1,9 +1,9 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" shape-rendering="crispEdges">
   <style>
-    .bg { fill: #f3ecdd; }
-    .bd { fill: #221c2e; }
-    .ink { fill: #221c2e; }
-    .accent { fill: #c43b78; }
+    .bg { fill: #0000aa; }
+    .bd { fill: #ffffff; }
+    .ink { fill: #ffffff; }
+    .accent { fill: #ffff55; }
     @media (prefers-color-scheme: dark) {
       .bg { fill: #14111f; }
       .bd { fill: #ece7f6; }

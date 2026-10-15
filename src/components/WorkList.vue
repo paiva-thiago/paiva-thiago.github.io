@@ -28,6 +28,7 @@ export default {
 
 .work {
   background-color: var(--panel);
+  color: var(--on-panel);
   border: 3px solid var(--border);
   box-shadow: var(--shadow);
   padding: 1.5rem;
@@ -44,30 +45,31 @@ export default {
 .work h2 {
   font-family: var(--c64);
   font-size: 1.25rem;
-  color: var(--accent);
+  color: var(--on-panel-accent);
 }
 
 .work h3 {
   font-family: var(--c64);
   font-size: 1rem;
+  color: var(--on-panel);
 }
 
 .work h4 {
   font-family: var(--mono);
   font-size: 0.85rem;
-  color: var(--text-soft);
+  color: var(--on-panel-soft);
 }
 
 .work h5 {
   font-family: var(--mono);
   font-size: 0.8rem;
-  color: var(--accent-2);
+  color: var(--on-panel-accent-2);
 }
 
 .workDescription {
   font-family: var(--sans);
   font-weight: normal;
-  color: var(--text);
+  color: var(--on-panel);
   text-align: left;
   line-height: 1.65;
 }

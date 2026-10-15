@@ -43,7 +43,7 @@ export default {
 
 .sld {
   background-color: var(--panel);
-  color: var(--text);
+  color: var(--on-panel);
   border: 3px solid var(--border);
   box-shadow: var(--shadow);
   padding: 2rem 2rem 3rem;
@@ -61,24 +61,25 @@ export default {
 .sld h2 {
   font-family: var(--c64);
   font-size: 1.5rem;
-  color: var(--accent);
+  color: var(--on-panel-accent);
 }
 
 .sld h3 {
   font-family: var(--c64);
   font-size: 1.1rem;
+  color: var(--on-panel);
 }
 
 .sld h4 {
   font-family: var(--mono);
   font-size: 0.9rem;
-  color: var(--text-soft);
+  color: var(--on-panel-soft);
 }
 
 .sld h5 {
   font-family: var(--mono);
   font-size: 0.85rem;
-  color: var(--accent-2);
+  color: var(--on-panel-accent-2);
   margin-top: 0.5rem;
 }
 
@@ -86,7 +87,7 @@ export default {
   font-family: var(--sans);
   font-weight: normal;
   width: 100%;
-  color: var(--text);
+  color: var(--on-panel);
   text-align: left;
   line-height: 1.65;
 }

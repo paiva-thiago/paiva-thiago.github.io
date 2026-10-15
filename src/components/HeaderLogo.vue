@@ -12,7 +12,7 @@ export default {
 <style scoped>
 h1 {
   display: inline-block;
-  color: var(--text);
+  color: var(--on-panel);
   background-color: var(--panel);
   border: 3px solid var(--border);
   box-shadow: var(--shadow);
