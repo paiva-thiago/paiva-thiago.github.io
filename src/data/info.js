@@ -30,10 +30,10 @@ const headerData = {
 }
 const jobs = [
   job(
-    'since 04/2025',
-    '',
+    '04/2025',
+    '10/2026',
     'Fullstack Developer',
-    'act Digital @ BNP SLIB',
+    'act Digital @ SLIB',
     'Lisbon, Portugal',
     `<p>Development of a project from scratch, focused on  Stock Markets.</p>`,
     'Java 21, Spring Boot, Angular, PostgreSQL, JaCoCo, JUnit, JIRA '

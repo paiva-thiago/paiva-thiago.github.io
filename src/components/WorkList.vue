@@ -20,40 +20,55 @@ export default {
     </div>
   </div>
 </template>
-<style>
-@media (min-width: 550px) {
-  .workList {
-    display: none;
-  }
+<style scoped>
+.worklist {
+  max-width: 740px;
+  margin: 0 auto;
 }
-.workList {
-  margin-left: 0;
-  margin-right: auto;
-  width: 55% !important;
-  overflow: hidden;
-  position: absolute;
-}
+
 .work {
-  border-bottom: 1px solid #14091b;
+  background-color: var(--panel);
+  border: 3px solid var(--border);
+  box-shadow: var(--shadow);
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  text-align: left;
 }
+
 .work div {
   display: grid;
   grid-template-columns: 100%;
+  gap: 0.4rem;
 }
-.work h2,
-.work h3,
+
+.work h2 {
+  font-family: var(--c64);
+  font-size: 1.25rem;
+  color: var(--accent);
+}
+
+.work h3 {
+  font-family: var(--c64);
+  font-size: 1rem;
+}
+
 .work h4 {
-  font-family: 'Raleway';
-  display: block;
+  font-family: var(--mono);
+  font-size: 0.85rem;
+  color: var(--text-soft);
 }
+
 .work h5 {
-  font-family: 'Courier New', Courier, monospace;
-  font-weight: bolder;
+  font-family: var(--mono);
+  font-size: 0.8rem;
+  color: var(--accent-2);
 }
+
 .workDescription {
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: lighter;
-  color: #14091b;
+  font-family: var(--sans);
+  font-weight: normal;
+  color: var(--text);
   text-align: left;
+  line-height: 1.65;
 }
 </style>

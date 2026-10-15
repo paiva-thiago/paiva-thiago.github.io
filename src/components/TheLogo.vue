@@ -9,25 +9,17 @@ export default {
 <template>
   <h2 class="thelogo">{{ thename }}</h2>
 </template>
-<style>
+<style scoped>
 h2.thelogo {
-  color: #444;
-  border: 3px solid #000;
-  background-color: transparent;
-  padding: 1%;
-  width: fit-content;
-  height: fit-content;
-  font-weight: 900;
-  font-family: 'Maven Pro', sans-serif;
-  font-size: 2pc;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-@media (max-width: 550px) {
-  h2.thelogo {
-    font-size: 1pc !important;
-  }
+  display: inline-block;
+  color: var(--bg);
+  background-color: var(--accent);
+  border: 3px solid var(--border);
+  box-shadow: var(--shadow-sm);
+  padding: 0.35em 0.55em;
+  font-family: var(--c64);
+  font-size: clamp(1rem, 3.5vw, 1.5rem);
+  letter-spacing: 0.03em;
+  margin: 0 auto 2rem;
 }
 </style>

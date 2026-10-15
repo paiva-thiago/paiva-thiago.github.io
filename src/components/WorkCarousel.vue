@@ -34,53 +34,88 @@ export default {
     </template>
   </carousel>
 </template>
-<style>
+<style scoped>
 .crsl {
-  width: 80em;
-  margin-left: 0;
-  margin-right: auto;
+  width: 100%;
+  max-width: 740px;
+  margin: 0 auto;
 }
+
 .sld {
-  background-color: #aaa;
-  color: #444;
-  width: 60em;
-  height: 30em;
+  background-color: var(--panel);
+  color: var(--text);
+  border: 3px solid var(--border);
+  box-shadow: var(--shadow);
+  padding: 2rem 2rem 3rem;
+  min-height: 24em;
 }
+
 .sld div {
   display: grid;
   grid-template-columns: 100%;
+  gap: 0.55rem;
+  justify-items: center;
+  text-align: center;
 }
-.sld h2,
-.sld h3,
+
+.sld h2 {
+  font-family: var(--c64);
+  font-size: 1.5rem;
+  color: var(--accent);
+}
+
+.sld h3 {
+  font-family: var(--c64);
+  font-size: 1.1rem;
+}
+
 .sld h4 {
-  font-family: 'Raleway';
-  display: block;
+  font-family: var(--mono);
+  font-size: 0.9rem;
+  color: var(--text-soft);
 }
+
 .sld h5 {
-  font-family: 'Courier New', Courier, monospace;
-  font-weight: bolder;
+  font-family: var(--mono);
+  font-size: 0.85rem;
+  color: var(--accent-2);
+  margin-top: 0.5rem;
 }
+
 .sld .description {
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: lighter;
-  width: 75%;
-  color: #14091b;
+  font-family: var(--sans);
+  font-weight: normal;
+  width: 100%;
+  color: var(--text);
   text-align: left;
+  line-height: 1.65;
 }
-button.carousel__next,
-button.carousel__prev {
-  background-color: #555 !important;
+
+.crsl :deep(button.carousel__next),
+.crsl :deep(button.carousel__prev) {
+  background-color: var(--accent);
+  color: var(--bg);
+  border: 2px solid var(--border);
+  box-shadow: var(--shadow-sm);
 }
+
+.crsl :deep(button.carousel__next:hover),
+.crsl :deep(button.carousel__prev:hover) {
+  background-color: var(--accent-2);
+}
+
+.crsl :deep(.carousel__pagination-button) {
+  background-color: var(--text-soft);
+}
+
+.crsl :deep(.carousel__pagination-button--active) {
+  background-color: var(--accent);
+}
+
 @media (max-width: 550px) {
-  .csrl {
-    width: 30em !important;
-    margin: 0;
-    margin-left: -50px !important;
-  }
   .sld {
-    width: 25em !important;
-    height: 60em;
-    margin-left: -50px !important;
+    padding: 1.25rem 1.25rem 3rem;
+    min-height: 32em;
   }
   .hidmob {
     display: none;

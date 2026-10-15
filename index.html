@@ -7,6 +7,17 @@
     <meta name="author" content="Thiago Paiva" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="keywords" content="Javascript, Java, Node, Vuejs, json, ajax, web" />
+    <script>
+      ;(function () {
+        var stored = localStorage.getItem('theme')
+        var theme =
+          stored ||
+          (window.matchMedia('(prefers-color-scheme: dark)').matches
+            ? 'dark'
+            : 'light')
+        document.documentElement.setAttribute('data-theme', theme)
+      })()
+    </script>
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"

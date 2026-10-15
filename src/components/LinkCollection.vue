@@ -10,64 +10,57 @@ export default {
 </script>
 <template>
   <div class="icogrp">
-    <span v-for="link in links" :key="link">
-      <div class="ico">
-        <a :href="link.url" :title="link.title" target="_blank">
-          <i :class="link.ico" v-if="link.title != 'Lattes'"></i>
-          <Lattes v-if="link.title == 'Lattes'" />
-          <label>{{ link.title }}</label>
-        </a>
-      </div>
-    </span>
+    <div v-for="link in links" :key="link.url" class="ico">
+      <a :href="link.url" :title="link.title" target="_blank" rel="noopener">
+        <i :class="link.ico" v-if="link.title != 'Lattes'"></i>
+        <Lattes v-if="link.title == 'Lattes'" />
+        <label>{{ link.title }}</label>
+      </a>
+    </div>
   </div>
 </template>
-<style>
+<style scoped>
 .icogrp {
-  margin-left: 33%;
-  position: absolute;
-  display: grid;
-  grid-template-rows: 100%;
-  grid-template-columns: 25% 25% 25% 25%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.9rem;
+  margin-top: 1.75rem;
 }
+
 .ico a {
-  color: #444;
-  font-size: 46px;
-  float: left !important;
-  margin-left: 5% !important;
-  margin-right: 5% !important;
-  height: 90%;
-}
-.ico a label {
-  display: none !important;
-}
-.ico a:hover {
-  color: #0c0411;
-}
-.icogrp .ico {
-  box-sizing: border-box;
-  padding: 0.5%;
-  display: inline !important;
-  width: 100%;
-  font-size: 1pc;
-  margin: 0 auto;
-  margin-top: 35px;
-}
-.ico a {
-  color: #444;
-  font-size: 64px;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  color: var(--text);
+  font-family: var(--mono);
+  font-size: 0.85rem;
   text-decoration: none;
+  background-color: var(--panel);
+  border: 2px solid var(--border);
+  box-shadow: var(--shadow-sm);
+  padding: 0.5rem 0.8rem;
+  transition: transform 0.15s ease, background-color 0.2s ease, color 0.2s ease;
 }
+
+.ico a:hover {
+  color: var(--bg);
+  background-color: var(--accent-2);
+  transform: translate(-2px, -2px);
+}
+
+.ico a i {
+  font-size: 1.05rem;
+  line-height: 1;
+}
+
 .ico a label {
-  display: none;
+  cursor: pointer;
 }
-@media (max-width: 550px) {
-  .icogrp {
-    display: grid;
-    position: relative;
-    grid-template-columns: 100%;
-  }
-  .ico a {
-    width: 80%;
-  }
+
+.ico svg {
+  width: 1.1rem;
+  height: 1.1rem;
+  display: block;
 }
 </style>

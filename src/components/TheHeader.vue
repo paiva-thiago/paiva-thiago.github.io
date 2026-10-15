@@ -10,21 +10,18 @@ export default {
 </script>
 <template>
   <HeaderLogo :thename="data.name" />
-  <div class="description">
+  <p class="description">
     {{ data.desc }}
-  </div>
+  </p>
 </template>
-<style>
+<style scoped>
 .description {
-  box-sizing: border-box;
-  color: #326273;
-  padding: 1.5%;
-  display: block;
-  width: 100%;
-  font-weight: 1000;
-  font-family: monospace;
-  font-size: 1pc;
+  max-width: 56ch;
   margin: 0 auto;
-  margin-top: 35px;
+  color: var(--text-soft);
+  font-family: var(--sans);
+  font-size: 1rem;
+  line-height: 1.7;
+  text-align: center;
 }
 </style>

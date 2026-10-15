@@ -1,45 +1,22 @@
 @import './base.css';
-body {
-  background-color: #d4d4d4;
-}
+
 #app {
-  max-width: 1280px;
+  max-width: 920px;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 2rem 1.5rem 3rem;
   font-weight: normal;
-  color: #000;
+  color: var(--text);
 }
 
-a,
-.green {
+a {
+  color: var(--link);
   text-decoration: none;
-  color: hsla(160, 100%, 37%, 1);
-  transition: 0.4s;
-  padding: 3px;
+  transition: color 0.2s ease, background-color 0.2s ease;
 }
 
 @media (hover: hover) {
   a:hover {
-    background-color: #777777;
-  }
-}
-
-@media (min-width: 1024px) {
-  body {
-    display: flex;
-    place-items: center;
-  }
-
-  #app {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 0 2rem;
-  }
-}
-@media (max-width: 580px) {
-  #app {
-    max-width: 580px;
-    width: 550px;
-    display: block;
+    color: var(--bg);
+    background-color: var(--accent);
   }
 }

@@ -1,24 +1,18 @@
 <template>
   <footer><span class="copyleft">©</span> Thiago Paiva 2025</footer>
 </template>
-<style>
+<style scoped>
 .copyleft {
   display: inline-block;
   transform: rotateY(180deg);
 }
 footer {
-  border-top: 1px solid #444;
-  font-family: 'Courier New', Courier, monospace;
-  font-size: 14px;
+  margin-top: 4rem;
+  padding-top: 1.5rem;
+  border-top: 3px dashed var(--border);
+  font-family: var(--mono);
+  font-size: 0.85rem;
+  color: var(--text-soft);
   text-align: center;
-  display: block;
-  margin-top: 100px;
-}
-@media (max-width: 550px) {
-  footer {
-    padding: 0;
-    margin: 0;
-    margin-left: -30px;
-  }
 }
 </style>

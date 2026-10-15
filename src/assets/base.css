@@ -1,6 +1,63 @@
-@import url(https://fonts.googleapis.com/css?family=Maven+Pro:400,500,700,900);
+@font-face {
+  font-family: 'C64';
+  src: url('./fonts/C64_Pro_Mono-STYLE.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
 
-@import url(https://fonts.googleapis.com/css?family=Raleway);
+:root {
+  --c64: 'C64', 'Courier New', monospace;
+  --mono: 'Courier New', Courier, monospace;
+  --sans: 'Segoe UI', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+
+  --bg: #f3ecdd;
+  --bg-soft: #e9dfca;
+  --panel: #fbf7ed;
+  --panel-alt: #e9dfca;
+  --text: #221c2e;
+  --text-soft: #5a5268;
+  --accent: #c43b78;
+  --accent-2: #147c6f;
+  --link: #14599e;
+  --border: #221c2e;
+  --dot: rgba(34, 28, 46, 0.1);
+  --shadow-color: rgba(34, 28, 46, 0.85);
+  --shadow: 6px 6px 0 var(--shadow-color);
+  --shadow-sm: 3px 3px 0 var(--shadow-color);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme='light']) {
+    --bg: #14111f;
+    --bg-soft: #1d1830;
+    --panel: #221c36;
+    --panel-alt: #2b2444;
+    --text: #ece7f6;
+    --text-soft: #b5adca;
+    --accent: #ff7ac2;
+    --accent-2: #5ae6c2;
+    --link: #8ac8ff;
+    --border: #ece7f6;
+    --dot: rgba(236, 231, 246, 0.07);
+    --shadow-color: rgba(0, 0, 0, 0.6);
+  }
+}
+
+:root[data-theme='dark'] {
+  --bg: #14111f;
+  --bg-soft: #1d1830;
+  --panel: #221c36;
+  --panel-alt: #2b2444;
+  --text: #ece7f6;
+  --text-soft: #b5adca;
+  --accent: #ff7ac2;
+  --accent-2: #5ae6c2;
+  --link: #8ac8ff;
+  --border: #ece7f6;
+  --dot: rgba(236, 231, 246, 0.07);
+  --shadow-color: rgba(0, 0, 0, 0.6);
+}
 
 *,
 *::before,
@@ -10,13 +67,26 @@
   font-weight: normal;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  transition:
-    color 2s,
-    background-color 0.5s;
+  min-height: 100vh;
+  font-family: var(--sans);
+  color: var(--text);
+  background-color: var(--bg);
+  background-image: radial-gradient(circle at 1px 1px, var(--dot) 1px, transparent 0);
+  background-size: 26px 26px;
   line-height: 1.6;
-  font-size: 15px;
+  font-size: 16px;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+::selection {
+  background: var(--accent);
+  color: var(--bg);
 }
