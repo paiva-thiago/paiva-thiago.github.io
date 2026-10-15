@@ -70,13 +70,17 @@ const jobs = [
     'Oeiras, Lisbon, Portugal — Hybrid 1x/week',
     `<ul>
       <li><strong>Project 1 — Flight Data Dashboard</strong></li>
-      <li>Developed a dashboard from the ground up — architecture through implementation — to visualize airport flight-plan data.</li>
-      <li>Owned the full project lifecycle as sole/lead developer, from design through delivery.</li>
-      <li>Led knowledge transfer to junior developers at handoff, including documentation and onboarding support — demonstrating a track record of mentoring.</li>
+      <ul>
+        <li>Developed a dashboard from the ground up — architecture through implementation — to visualize airport flight-plan data.</li>
+        <li>Owned the full project lifecycle as sole/lead developer, from design through delivery.</li>
+        <li>Led knowledge transfer to junior developers at handoff, including documentation and onboarding support — demonstrating a track record of mentoring.</li>
+      </ul>
       <li><strong>Project 2 — Aeronautical Information System (AIS)</strong></li>
-      <li>Maintained and evolved the AIS, used by multiple airports worldwide to exchange flight routes, plans, and meteorological data — corrective and evolutionary work across data management, API development, and UI on a Java Swing desktop application (chosen to meet the client's desktop-deployment requirement).</li>
-      <li>Worked full Agile ceremonies (dailies, retrospectives, sprint reviews) within a distributed France/Portugal team, communicating fully in English.</li>
-    </ul>`,
+      <ul>
+        <li>Maintained and evolved the AIS, used by multiple airports worldwide to exchange flight routes, plans, and meteorological data — corrective and evolutionary work across data management, API development, and UI on a Java Swing desktop application (chosen to meet the client's desktop-deployment requirement).</li>
+        <li>Worked full Agile ceremonies (dailies, retrospectives, sprint reviews) within a distributed France/Portugal team, communicating fully in English.</li>
+      </ul>
+     </ul>`,
     'Java 16/17, Spring Boot, Spring Data JPA, RESTful APIs, Microservices, PostgreSQL, Docker, Linux, Tomcat, RabbitMQ, Gradle, Scrum, Kanban, HTML, CSS, JavaScript, Maven'
   ),
   job(
