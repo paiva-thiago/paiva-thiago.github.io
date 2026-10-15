@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Thiago Paiva - Web Development</title>
+    <meta name="description" content="Thiago Paiva professional web page" />
+    <meta name="author" content="Thiago Paiva" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="keywords" content="Javascript, Java, Node, Vuejs, json, ajax, web" />
+    <script>
+      ;(function () {
+        var stored = localStorage.getItem('theme')
+        var theme =
+          stored ||
+          (window.matchMedia('(prefers-color-scheme: dark)').matches
+            ? 'dark'
+            : 'light')
+        document.documentElement.setAttribute('data-theme', theme)
+      })()
+    </script>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+      integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <script type="module" crossorigin src="/assets/index-C3CwRQOk.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-DM_zhO99.css">
+  </head>
+  <body>
+    <div id="app"></div>
+  </body>
+</html>
