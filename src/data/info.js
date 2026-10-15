@@ -180,8 +180,11 @@ const partTimes = [
   )
 ]
 
+const footer = `Thiago Paiva ${new Date().getFullYear()}`
+
 export default {
   headerData: headerData,
   jobs,
-  partTimes
+  partTimes,
+  footer
 }

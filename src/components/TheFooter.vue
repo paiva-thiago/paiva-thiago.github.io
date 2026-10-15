@@ -1,5 +1,13 @@
+<script>
+export default {
+  name: 'TheFooter',
+  props: {
+    info: String
+  }
+}
+</script>
 <template>
-  <footer><span class="copyleft">©</span> Thiago Paiva 2025</footer>
+  <footer><span class="copyleft">©</span> {{info}}</footer>
 </template>
 <style scoped>
 .copyleft {

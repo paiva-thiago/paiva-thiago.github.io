@@ -28,7 +28,7 @@ import data from './data/info.js'
       <WorkList :jobs="data.partTimes" />
     </section>
 
-    <TheFooter />
+    <TheFooter :info="data.footer" />
   </main>
 </template>
 
